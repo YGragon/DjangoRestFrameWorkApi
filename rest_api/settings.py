@@ -40,11 +40,17 @@ INSTALLED_APPS = [
     'django_web',
     'rest_framework',
     'snippets.apps.SnippetsConfig',
+    'rest_framework.authtoken',
 ]
 
 # 添加
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAdminUser',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
     'PAGINATE_BY': 10
 }
 
