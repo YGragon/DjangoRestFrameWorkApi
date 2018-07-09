@@ -51,7 +51,8 @@ REST_FRAMEWORK = {
         # 'rest_framework.authentication.SessionAuthentication',
         # 'rest_framework.authentication.TokenAuthentication',
     ),
-    'PAGINATE_BY': 10
+    'PAGINATE_BY': 10,
+    'PAGE_SIZE': 10
 }
 
 MIDDLEWARE = [
