@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_web',
     'rest_framework',
     'snippets.apps.SnippetsConfig',
     'rest_framework.authtoken',
